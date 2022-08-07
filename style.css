@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+.container{
+    background-color: #F7F7F7;
+    height: 100%;
+   padding-bottom: 150px;
+}
+.header{
+    background-color: white;
+    padding: 13px 137px;
+    max-width: 1440px;
+    margin: auto;
+}
+.logo{
+    font-size: 40px;
+    font-weight: 700;
+    text-decoration: none;
+}
+.logo-head{
+    text-shadow:1px 1px 5px rgb(48, 48, 48);
+    color: black;
+}
+.logo-head1{
+    text-shadow: 2px 2px 5px #000000;
+    color:#00A5EC;
+}
+.container-body{
+    max-width: 1100px;
+    margin: auto;
+    padding-top: 20px;
+}
+.link{
+    color: #00A5EC;
+}
+.add-task{
+   text-decoration: none;
+   color: black;
+   font-size: large;
+   font-weight: 500;
+   display: flex;
+   align-items: center;
+   justify-content: end;
+}
+.fa-plus-circle{
+    color: #00A5EC;
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 320px);
+    justify-content:space-around;
+
+}
+.card{
+    margin: 20px;
+    height: 270px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px #dfdede;
+}
+
+.card-header{
+    padding: 20px;
+}
+.card-head{
+    color: #00A5EC;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    text-shadow: 1px 1px 3px rgb(248, 61, 61);
+}
+hr{
+    border:1px solid #EDEDED;
+    margin-bottom: 30px;
+}
+.box{
+    display: flex;
+    align-items: center;
+    
+}
+input[type=checkbox]{
+    margin-left: 40px;
+    width: 30px;
+    height: 30px;
+    
+}
+input[type=checkbox]:hover{
+    color: #C2C2C2;
+    background-color: #C2C2C2;
+}
+label{
+    color: #424242;
+}
+
+input:checked + label{
+    color: #C2C2C2;
+    text-decoration: line-through;
+}
+
+
+@media (min-width: 768px) and (max-width: 1199.98px){
+    .add-task{
+        justify-content: center;
+     }
+
+ }
+
+@media (max-width: 767.98px){
+    .header{
+        padding: 13px;
+    }
+    .add-task{
+        justify-content: center;
+     }
+    .add-task-text{
+        display: none;
+    }
+    /* to adjust space between plus */
+    .container-body{
+        padding-top: 0px;
+    }
+    .fa-plus-circle{
+        margin: 10px;
+    }
+    
+ }
+ @media (max-width: 640px) {
+    .card1{
+        margin-top: 0px;
+    }
+  }

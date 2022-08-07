@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+.container{
+    background-color: #F7F7F7;
+    height: 100%;
+    padding-bottom: 150px;
+}
+.header{
+    background-color: white;
+    padding: 13px 137px;
+    max-width: 1440px;
+    margin: auto;
+}
+.logo{
+    font-size: 40px;
+    font-weight: 700;
+    text-decoration: none;
+}
+.logo-head{
+    text-shadow:1px 1px 5px rgb(48, 48, 48);
+    color: black;
+}
+.logo-head1{
+    text-shadow: 2px 2px 5px #000000;
+    color:#00A5EC;
+}
+.container-body{
+    max-width: 1100px;
+    margin: auto;
+    padding-top: 20px;
+    
+}
+.links{
+    margin-top: 30px;
+    display: flex;
+    justify-content:space-evenly; 
+    
+}
+.alink{
+    text-decoration: none;
+    color: black;
+    font-size: large;
+    font-weight: 500;
+   
+    display: flex;
+}
+.fa-plus-circle{
+    color: #00A5EC;
+    
+}
+.fa-arrow-circle-left{
+   color: #424242;
+}
+.task-box{
+    max-width: 530px;
+    margin: 20px auto;
+    height: 330px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #dfdede;
+}
+
+.task-box-head{
+    color: #00A5EC;
+    padding: 20px;
+    text-align: center;
+    font-weight: 600;
+    text-shadow: 1px 1px 3px rgb(248, 61, 61);
+
+}
+.box{
+    display: flex;
+    align-items: center;
+}
+hr{
+    margin-bottom: 30px;
+    border: 1px solid #EDEDED;
+}
+input[type=checkbox]{
+    margin-left: 40px;
+    width: 30px;
+    height: 30px;
+    
+}
+input[type=checkbox]:hover{
+    color: #C2C2C2;
+    background-color: #C2C2C2;
+}
+label{
+    color: #424242;
+}
+
+input:checked + label{
+    color: #C2C2C2;
+    text-decoration: line-through;
+}
+    
+@media (max-width: 767.98px){
+    .header{
+        padding: 13px;
+    }
+    .task-box{
+        max-width: 320px;
+    }
+    .links{
+        width: 320px;
+        margin: auto;
+        justify-content: space-between;
+    }
+ }
+ @media (max-width: 575.98px) {
+    .add{
+        display: none;
+    }
+    .links{
+        justify-content: start;
+    }
+    .link1{
+        margin-left: 10px;
+    }
+    .link2{
+      margin-left: 50px;
+    }
+    .fa-plus-circle{
+      font-size:xx-large;
+    }
+  }
